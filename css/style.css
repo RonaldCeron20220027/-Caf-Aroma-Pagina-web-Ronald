@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav a{
+    font-size: 18px;
+    box-shadow: inset;
+    text-decoration: none;
+     color: #000;
+    font-weight: 600;
+    transition: 0.8s;
+    padding: 10px;
+    border-radius: 12px;
+}
+nav a:hover{
+    transition: 0.8s;
+    background-color: antiquewhite;
+}
+.targeta{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin: 20px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px #daa6177a;
+    font-family: "Rock Salt", cursive;
+}
+.card:hover{
+    background-color: #77571b98 ;
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card-content{
+    padding: 35px;
+}
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    gap: 30px;
+    flex-wrap: wrap;/*usar varias lineas*/
+}
+/* Imaen con texto de categoria */
+.categoria{
+    display: flex;
+    flex-direction: column; /*Cotenido va hacia abajo*/
+    align-items: center;
+}
+.categoria img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;/*Evita el espacio con la imagen sin aplastarse*/
+}
+.categoria h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+.categoria h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.categoria:hover{
+    background-color: #77571b98 ;
+    transform: scale(1.05);
+}
+.categoria{
+    margin: 20px;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px hsla(44, 81%, 31%, 0.478);
+    font-family: "Rock Salt", cursive;
+}
+.NosotrosC{
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+.NosotrosC p{
+    margin-top: 80px;
+}
+.NosotrosC img{
+    margin: 30px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.ubiyh{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ubi{
+    margin: 20px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0px 5px 10px hsla(44, 81%, 31%, 0.478);
+}
+.ubi img{
+    object-fit: cover;
+    border-radius: 25px;
+}
+footer{
+    display: flex;
+}
+@media(width<550px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
